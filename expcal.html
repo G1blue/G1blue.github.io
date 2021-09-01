@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Calculator: Exponents</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+     <button><a href="index.html">Go to home</a></button>
+     <h2 class="text" id="calculator4">Calculator: Exponents</h2>
+     <h3>Exponent</h3>
+     <input type="number" id="exponent1">
+     <h3>Number</h3>
+     <input oninput="calculate4click()" type="number" id="bigsmol2"><br><br>
+     <div id="answer4"></div>
+       
+       <script>
+         function calculate4click(){
+         var exponent1 = document.getElementById("exponent1").value;
+         var bigsmol2 = document.getElementById("bigsmol2").value;
+         var answer4 = document.getElementById("answer4");
+         answer4.innerHTML = Math.pow(bigsmol2, exponent1)
+         if(answer4.innerHTML === "NaN"){
+             answer4.innerHTML = "Error, please add/change values to continue"
+         }
+     }
+         
+        </script>
+    </body>
+</html>

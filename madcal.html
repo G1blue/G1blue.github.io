@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Calculator: Many Addends</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <button><a href="index.html">Go to home</a></button>
+        <h2 class = "text" id="calculator2">Many Addends Calculator</h2>
+        <h3>Smallest Number</h3>
+        <input type="number" id="smol2">
+        <h3>Largest Number</h3>
+        <input oninput="calculate2click()" type="number" id="big2"><br><br>
+        <div id="answer2"></div>
+       
+       
+       <script>
+             function calculate2click(){
+             var smol2 = document.getElementById("smol2").value;
+             var big2 = document.getElementById("big2").value;
+             var answer2 = document.getElementById("answer2");
+             answer2.innerHTML = (parseInt(smol2)+parseInt(big2))*((parseInt(big2)-parseInt(smol2)+1)/2)
+             if (answer2.innerHTML === "NaN"){
+                 answer2.innerHTML = "Error, please add/change values to continue"
+             }
+         };
+         
+        </script>
+    </body>
+</html>

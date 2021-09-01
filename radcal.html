@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Calculator: Radicals</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+     <button><a href="index.html">Go to home</a></button>
+     <h2 class="text" id="calculator3">Radicals (Rounds to 2 decimal places)</h2>
+     <h3>Root</h3>
+     <input type="number" id="root1">
+     <h3>Number</h3>
+     <input oninput="calculate3click()" type="text" id="bigsmol1"><br><br>
+     <div id="answer3"></div>
+       
+       
+       <script>
+             function calculate3click(){
+             var root = document.getElementById("root1").value;
+             var bigsmol1 = document.getElementById("bigsmol1").value;
+             var answer3 = document.getElementById("answer3");
+             answer3.innerHTML = Math.pow(bigsmol1, 1/root).toFixed(2)
+             if (answer3.innerHTML === "NaN"){
+                 answer3.innerHTML = "Error, please add/change values to continue"
+             
+             } 
+             if (bigsmol1<0){
+                 answer3.innerHTML = "-" + Math.pow(bigsmol1-(2*bigsmol1), 1/root).toFixed(0)
+             } 
+             
+         };
+         
+        </script>
+    </body>
+</html>
