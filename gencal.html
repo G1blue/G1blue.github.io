@@ -15,7 +15,9 @@
         var equation = document.getElementById("equation").value;
         var answer = document.getElementById("answer");
         answer.innerHTML = eval(equation);
-        if (answer.innerHTML === undefined || Infinity)
+        if (answer.innerHTML === "undefined" || "Infinity"){
+            answer.innerHTML = "Error, please add/change values to continue"
+        }
        }
        
        
