@@ -25,6 +25,9 @@
                  answer3.innerHTML = "Error, please add/change values to continue"
              
              } 
+             else if (answer4.innerHTML === "Infinity"){
+             answer4.innerHTML = "Error"
+             }  
              if (bigsmol1<0){
                  answer3.innerHTML = "-" + Math.pow(bigsmol1-(2*bigsmol1), 1/root).toFixed(0)
              } 
