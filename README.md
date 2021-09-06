@@ -5,3 +5,5 @@ Needed an update and more updates incoming soon!
 - Added files into this github repository
 ## September 2, 2021
 - General calculator finally working
+## September 6, 2021
+- Changed eval() to Function()()
