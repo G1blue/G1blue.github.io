@@ -14,7 +14,7 @@
        function varChange(){
         var equation = document.getElementById("equation").value;
         var answer = document.getElementById("answer");
-        answer.innerHTML = eval(equation);
+        answer.innerHTML = Function('return ' + equation)()
         
        }
        
