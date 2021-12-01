@@ -7,3 +7,6 @@ Needed an update and more updates incoming soon!
 - General calculator finally working
 ## September 6, 2021
 - Changed eval() to Function()()
+## December 1, 2021
+- Been inactive for 1 month
+- Little formatting and text edits
