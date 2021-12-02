@@ -26,9 +26,9 @@
 
         <style>
         body {
-             background-image: url("https://cdn.mos.cms.futurecdn.net/xYiTisbsp2HZPVupAZoNYQ-970-80.jpg.webp")
+             background-image: url("https://i2.wp.com/pixahive.com/wp-content/uploads/2021/02/Dark-green-grass-background-336021-pixahive.jpg?fit=778%2C435&ssl=1")
         }
-        h1 {
+        #title {
             font-size: 50px;
             color: rgb(255,255,51);
             font-family: monospace;
@@ -57,17 +57,60 @@
         #logo {
             position: absolute;
         }
+        .headings {
+            color: yellow;
+            padding: 10px; 
+        }
+        p {
+            color: white;
+            font-size: 20px;
+            padding: 20px;
+        }
+        #githubrepo {
+            color: yellow;
+        }
+        ul {
+            list-style: none; 
+            font-size: 20px;
+        }
+
+        ul li::before {
+          content: "\2022";  
+          color: white; 
+          font-weight: bold;
+          display: inline-block; 
+          width: 1em;
+          margin-left: -1em; 
+        }
+        
         </style>
         
     </head>
     <body>
         <a href="index.html"><div><img id="logo" src="https://i.imgur.com/Bf7H6jU.jpg" alt="logo" height="150"></div></a>
-        <h1>Calculators!!</h1>
+        <h1 id="title">Calculators!!</h1>
         
         <button><a href="gencal.html">Go to General Calculator</a></button>
         <button><a href="madcal.html">Go to Many addends calculator</a></button>
         <button><a href="radcal.html">Go to Radicals</a></button>
         <button><a href="expcal.html">Go to Exponents</a></button>
         <button><a href="credits.html">Go to Credits</a></button>
+        <br>
+        <br>
+        <br>
+        <h1 class="headings">Table of contents</h1>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#howto">How to use?</a></li>
+        </ul>
+        <br>
+        <br>
+        <br>
+        <h1 class="headings" id="about">About</h1>
+        <p id="aboutp">This webpage focuses on calculators and the power of javascript. If you don't know what javascript is, it is a programming language used in making games, or functionality on websites like this. Pretty cool isn't it? This webpage is made by me, G1blue. If you want to support this, you can see the github repo <a id="githubrepo" href="https://github.com/G1blue/G1blue.github.io">here.</a> If you want to suggest a feature, you can do so in the repo.</p>
+        <br>
+        <br>
+        <h1 class="headings" id="howto">How to use?</h1>
+        <p id="howtop">For the general calculator, the operation symbol you need to use for each operation is: + (for addition), - (for subtraction), * (for multiplication), and / (for division). For the other calculators, input the data in the first textbox before inputting into the second one. If you want to change the values, change the first input, then the second input. </p>
     </body>
 </html>
