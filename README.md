@@ -10,3 +10,4 @@ Needed an update and more updates incoming soon!
 ## December 1, 2021
 - Been inactive for 1 month
 - Little formatting and text edits
+- Added favicons
