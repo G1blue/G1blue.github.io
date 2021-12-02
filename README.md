@@ -11,3 +11,5 @@ Needed an update and more updates incoming soon!
 - Been inactive for 1 month
 - Little formatting and text edits
 - Added favicons
+## December 2, 2021
+- Favicons edit so you can see it more clearly. 
