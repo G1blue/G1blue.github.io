@@ -13,3 +13,7 @@ Needed an update and more updates incoming soon!
 - Added favicons
 ## December 2, 2021
 - Favicons edit so you can see it more clearly. 
+- Added about and how to
+- Replaced the background picture
+- Edited the credits
+
