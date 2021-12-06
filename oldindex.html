@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<!-- Made By: G1blue -->
+<!-- This project will showcase all calculators that I did, doing, and will do. I will now put all updates in calculators here. -->
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Calculators in 1</title>
+    <style>
+      body {
+                background-color: lightblue;
+                
+            }
+            h1 {
+                font-family: monospace;
+                font-size: 45px;
+                border: 19px double darkblue;
+                padding: 8px;
+            }
+            a:hover {
+                background-color: cyan;
+            }
+            p {
+                font-size: 17px;
+            }
+            .text {
+                font-family: monospace;
+                font-size: 30px;
+                font-weight: normal;
+                word-spacing: -10px;
+            }
+            ol {
+                font-size: 17px;
+                position: relative;
+                top: -22px;
+                line-height: 25px;
+            }
+            #calculate {
+                border: 5px solid black;
+                
+                
+            }
+            div {
+                font-family: monospace;
+                font-size: 30px;
+            }
+            input {
+                font-family: monospace;
+            }
+            #time {
+                position: fixed;
+                bottom: 0;
+                right: 0;
+                width: 9%;
+                font-family: monospace;
+            }
+        </style>
+    </head>
+    <body>
+     <h1>Calculators in One!!</h1>
+     <h3>Table of Contents</h3>
+     <ul>
+         <li><a href="#about1">About</a></li>
+         <li><a href="#how1">How to use the general calculator?</a></li>   
+         <li><a href="#how2">How to use the many addends calculator?</a></li>
+         <li><a href="#how3">How to use the root calculator?</a></li>
+         <li><a href="#how4">How to use the exponent calculator?</a></li>
+         <li><a href="#calculator1">General Calculator</a></li>
+         <li><a href="#calculator2">Many Addends Calculator</a></li>
+         <li><a href="#calculator3">Root Calculator</a></li>
+         <li><a href="#calculator4">Exponent Calculator</a></li>
+     </ul>
+<!-------------------------------------------------------------->
+     <p id="about1"><span class="text">About:</span><br>
+         These calculators about to be shown are calculators that I made myself. I developed an algorithm so the calculators would work properly.  
+     </p>
+<!-------------------------------------------------------------->
+     <h2 class="text" id="how1">How to use the general calculator?</h2>
+     <ol>
+         <li>Type the largest number in the first box.</li>
+         <li>Type the smallest number in the second box.</li>
+         <li>Choose your operation.</li>
+         <li>Click "Calculate".</li>
+     </ol>
+     <h2 class="text" id="how2">How to use the many addends calculator?</h2>
+     <ol>
+         <li>Type the smallest number in the first box.</li>
+         <li>Type the largest  number in the second box.</li>
+         <li>Click "Calculate".</li>
+     </ol>
+     <h2 class="text" id="how3">How to use the root calculator?</h2>
+     <ol>
+         <li>Type the root (square root = 2, cube root = 3, etc.)</li>
+         <li>Type a number.</li>
+         <li>Click "Calculate".</li>
+     </ol>
+     <h2 class="text" id="how4">How to use the exponent calculator?</h2>
+     <ol>
+         <li>Type the exponent.</li>
+         <li>Type a number.</li>
+         <li>Click "Calculate".</li>
+     </ol>
+<!-------------------------------------------------------------->
+     <h2 class="text" id="calculator1">General Calculator</h2>
+     <h3>Largest Number</h3>
+     <input type="number" id="big1"><br><br>
+     
+    <label><h3>What operation?</h3>
+        <select id="op">
+            <option value="plus">Addition</option>
+            <option value="minus">Subtraction</option>
+            <option value="times">Multiplication</option>
+            <option value="div">Division</option>
+        </select>
+        </label>
+        <h3>Smallest Number</h3>
+     <input type="number" id="smol1"><br><br>
+     <button id="calculate1">Calculate</button>
+     <div id="answer1"></div>
+<!-------------------------------------------------------------->
+     <h2 class = "text" id="calculator2">Many Addends Calculator</h2>
+     <h3>Smallest Number</h3>
+     <input type="number" id="smol2">
+     <h3>Largest Number</h3>
+     <input type="number" id="big2"><br><br>
+     <button id="calculate2">Calculate</button>
+     <div id="answer2"></div>
+<!-------------------------------------------------------------->
+     <h2 class="text" id="calculator3">Root Calculator (Rounds to 2 decimal places)</h2>
+     <h3>Root</h3>
+     <input type="number" id="root1">
+     <h3>Number</h3>
+     <input type="number" id="bigsmol1"><br><br>
+     <button id="calculate3">Calculate</button>
+     <div id="answer3"></div>
+<!-------------------------------------------------------------->
+<h2 class="text" id="calculator4">Exponent Calculator</h2>
+     <h3>Exponent</h3>
+     <input type="number" id="exponent1">
+     <h3>Number</h3>
+     <input type="number" id="bigsmol2"><br><br>
+     <button id="calculate4">Calculate</button>
+     <div id="answer4"></div>
+<!-------------------------------------------------------------->
+<h2 id="time"></h2>
+<!-------------------------------------------------------------->
+     <script>
+     //button code for the general calculator
+         var calculate1 = document.getElementById("calculate1");
+         var calculate1click = function () {
+             var op = document.getElementById("op").value;
+             var big1 = document.getElementById("big1").value;
+             var smol1 = document.getElementById("smol1").value;
+             var answer1 = document.getElementById("answer1");
+             var bigsmol = parseInt(big1)+parseInt(smol1);
+             if (op === "plus"){
+                 answer1.innerHTML = bigsmol
+             } else if (op === "minus"){
+                 answer1.innerHTML = big1-smol1
+             } else if (op === "times"){
+                 answer1.innerHTML = big1*smol1
+             } else if (op === "div"){
+                 answer1.innerHTML = big1/smol1
+             }
+             if (answer1.innerHTML === "NaN"){
+                 answer1.innerHTML = "Error, please add/change values to continue"
+             }
+         };
+         calculate1.addEventListener("click", calculate1click)
+         calculate1.addEventListener("touchstart", calculate1click)
+         
+         //button code for many addends calculator
+         var calculate2 = document.getElementById("calculate2");
+         var calculate2click = function(){
+             var smol2 = document.getElementById("smol2").value;
+             var big2 = document.getElementById("big2").value;
+             var answer2 = document.getElementById("answer2");
+             answer2.innerHTML = (parseInt(smol2)+parseInt(big2))*((parseInt(big2)-parseInt(smol2)+1)/2)
+             if (answer2.innerHTML === "NaN"){
+                 answer2.innerHTML = "Error, please add/change values to continue"
+             }
+         };
+         calculate2.addEventListener("click", calculate2click)
+         calculate2.addEventListener("touchstart", calculate2click)
+         
+         //button code for root calculator
+         var calculate3 = document.getElementById("calculate3");
+         var calculate3click = function(){
+             var root = document.getElementById("root1").value;
+             var bigsmol1 = document.getElementById("bigsmol1").value
+             var answer3 = document.getElementById("answer3");
+             answer3.innerHTML = Math.pow(bigsmol1, 1/root).toFixed(2)
+             if (answer3.innerHTML === "NaN"){
+                 answer3.innerHTML = "Error, please add/change values to continue"
+             
+             } 
+             if (bigsmol1<0){
+                 answer3.innerHTML = "-" + Math.pow(bigsmol1-(2*bigsmol1), 1/root).toFixed(0)
+             } 
+             
+         };
+         calculate3.addEventListener("click", calculate3click)
+         calculate3.addEventListener("touchstart", calculate3click) 
+     
+         //button code for exponent calculator
+     var calculate4 = document.getElementById("calculate4");
+     var calculate4click = function(){
+         var exponent1 = document.getElementById("exponent1").value;
+         var bigsmol2 = document.getElementById("bigsmol2").value;
+         var answer4 = document.getElementById("answer4");
+         answer4.innerHTML = Math.pow(bigsmol2, exponent1)
+         if(answer4.innerHTML === "NaN"){
+             answer4.innerHTML = "Error, please add/change values to continue"
+         }
+     }
+     calculate4.addEventListener("click", calculate4click)
+     calculate4.addEventListener("touchstart", calculate4click)
+         //js for date
+        
+    function t() {
+    var d = new Date();
+    var s = d.getSeconds();
+    var m = d.getMinutes();
+    var h = d.getHours();
+    document.getElementById('time').innerHTML = h + ":" + m + ":" + s
+    if(s<10){
+        document.getElementById('time').innerHTML = h + ":" + m + ":" + "0" + s
+    }
+    else if(m<10){
+        document.getElementById('time').innerHTML = h + ":" + "0" + m + ":" + s
+    }
+    else if(h<10){
+        document.getElementById('time').innerHTML = "0" + h + ":" + m + ":" + s
+    }
+        if(s<10 && m<10){
+        document.getElementById('time').innerHTML = h + ":" + "0" + m + ":" + "0" + s
+    }
+    else if(s<10 && h<10){
+        document.getElementById('time').innerHTML = "0" + h + ":" + m + ":" + "0" + s
+    }
+    else if(m<10 && h<10){
+        document.getElementById('time').innerHTML =  "0" + h + ":" + "0" + m + ":" +  s
+    }
+    else if(m<10 && h<10 && s<10){
+        document.getElementById('time').innerHTML = "0" + h + ":" + "0" + m + ":" + "0" + s
+    }
+    
+    }
+     t();
+     window.setInterval(t, 1000);
+
+     </script>
+   
+
+    </body>
+</html>
