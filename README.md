@@ -16,4 +16,7 @@ Needed an update and more updates incoming soon!
 - Added about and how to
 - Replaced the background picture
 - Edited the credits
+## December 6, 2021
+- All backgrounds of all websites are the same. 
+- Found an error in the code in the exponent calculator, now fixed and the exponent calculator is now working. 
 
