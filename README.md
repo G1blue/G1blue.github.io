@@ -19,4 +19,8 @@ Needed an update and more updates incoming soon!
 ## December 6, 2021
 - All backgrounds of all websites are the same. 
 - Found an error in the code in the exponent calculator, now fixed and the exponent calculator is now working. 
+## December 16, 2021
+- I forgot to put the changelog in putting the old calculators here. I guess I'll put it here then. 
+- Added Calculators v1.0.3
+- Renamed oldindex.html to calculatorsv103.html
 
