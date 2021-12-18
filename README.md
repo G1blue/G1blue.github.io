@@ -23,4 +23,5 @@ Needed an update and more updates incoming soon!
 - I forgot to put the changelog in putting the old calculators here. I guess I'll put it here then. 
 - Added Calculators v1.0.3
 - Renamed oldindex.html to calculatorsv103.html
-
+## December 18, 2021
+- Changed the titles of some websites and the main one. 
