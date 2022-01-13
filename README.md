@@ -25,3 +25,6 @@ Needed an update and more updates incoming soon!
 - Renamed oldindex.html to calculatorsv103.html
 ## December 18, 2021
 - Changed the titles of some websites and the main one. 
+## January 13, 2022
+- Happy new year! New update!
+- The calculator links are now in a separate webpage, which can be accessed through the main webpage or index.html
