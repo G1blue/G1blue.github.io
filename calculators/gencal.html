@@ -1,8 +1,9 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
     <head>
         <meta charset="utf-8">
-        <title>404 Error</title>
+        <title>Calculators!! | General</title>
+        <link rel="stylesheet" href="styles.css">
         <link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicons/pple-touch-icon-57x57.png" />
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicons/apple-touch-icon-114x114.png" />
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicons/apple-touch-icon-72x72.png" />
@@ -23,23 +24,22 @@
         <meta name="msapplication-square150x150logo" content="favicons/mstile-150x150.png" />
         <meta name="msapplication-wide310x150logo" content="favicons/mstile-310x150.png" />
         <meta name="msapplication-square310x310logo" content="favicons/mstile-310x310.png" />
-        <style>
-        body {
-             background-image: url("https://i2.wp.com/pixahive.com/wp-content/uploads/2021/02/Dark-green-grass-background-336021-pixahive.jpg?fit=778%2C435&ssl=1")
-        }
-        h1 {
-             color: white;
-             text-align: center;
-        }
-        a {
-             color: yellow;
-             text-decoration: none;
-        }
-        </style>
-     
     </head>
+    <a href="https://g1blue.github.io"><div><img id="logo" src="https://i.imgur.com/r870a7Q.png" alt="logo" height="85"></div></a>
     <body>
-        <h1>Oops! Looks like you tried to access a page that is non-existent. </h1>
-        <h1>Are you lost? Click <a href="https://g1blue.github.io">here</a> to go back to the home page. </h1>
+     <h1>Calculator: General</h1>
+     <input oninput="varChange()" id="equation" type="text">
+     <div id="answer"></div>
+     <script>
+       function varChange(){
+        var equation = document.getElementById("equation").value;
+        var answer = document.getElementById("answer");
+        answer.innerHTML = Function('return ' + equation)()
+        
+       }
+       
+       
+       
+     </script>
     </body>
 </html>
