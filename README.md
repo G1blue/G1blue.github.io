@@ -28,3 +28,5 @@ Needed an update and more updates incoming soon!
 ## January 13, 2022
 - Happy new year! New update!
 - The calculator links are now in a separate webpage, which can be accessed through the main webpage or index.html
+## January 17, 2022
+- Calculators are now in a separate folder, and I tweaked the calculators.html page.
