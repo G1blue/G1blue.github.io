@@ -1,6 +1,6 @@
 # Calculators v2.0
 Needed an update and more updates incoming soon!
-- Current Version: 2.1.0
+- Current Version: 2.3.1
 ## September 1, 2021
 - Added files into this github repository
 ## September 2, 2021
