@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Clicking Simulator by G1blue</title>
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicons/pple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicons/apple-touch-icon-114x114.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicons/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicons/apple-touch-icon-144x144.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="60x60" href="favicons/apple-touch-icon-60x60.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="favicons/apple-touch-icon-120x120.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="76x76" href="favicons/apple-touch-icon-76x76.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicons/apple-touch-icon-152x152.png" />
+        <link rel="icon" type="image/png" href="favicons/favicon-196x196.png" sizes="196x196" />
+        <link rel="icon" type="image/png" href="favicons/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16" />
+        <link rel="icon" type="image/png" href="favicons/favicon-128.png" sizes="128x128" />
+        <meta name="application-name" content="favicons/&nbsp;"/>
+        <meta name="msapplication-TileColor" content="#FFFFFF" />
+        <meta name="msapplication-TileImage" content="favicons/mstile-144x144.png" />
+        <meta name="msapplication-square70x70logo" content="favicons/mstile-70x70.png" />
+        <meta name="msapplication-square150x150logo" content="favicons/mstile-150x150.png" />
+        <meta name="msapplication-wide310x150logo" content="favicons/mstile-310x150.png" />
+        <meta name="msapplication-square310x310logo" content="favicons/mstile-310x310.png" />
+        <style>
+            body {
+                background-image: url("https://i2.wp.com/pixahive.com/wp-content/uploads/2021/02/Dark-green-grass-background-336021-pixahive.jpg?fit=778%2C435&ssl=1")
+            }
+            h1 {
+                color: yellow;
+                text-align: center;
+            }
+            h2 {
+                color: white;
+            }
+            h3 {
+                color: yellow;
+            }
+            p {
+                color: white;
+            }
+            button {
+                padding: 10px;
+                border-radius: 100px;
+                color: white;
+                background-color: black;
+
+            }
+            div {
+                color: yellow;
+                font-size: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Clicking Simulator!</h1>
+        <button onclick="clickplusone()" id="cfc">Click here to earn clicks!</button>
+        <h1 id="noclicks">0</h1>
+        <h2 id="upgrades">Upgrades:</h2>
+        <h3>Click Amount</h3>
+        <p>CA1: Increases your click amount by 1</p>
+        <button onclick = "clickamount1()" id="moreclicks1">Buy with 500 clicks</button>
+        <p>CA2: Increases your click amount by 5</p>
+        <button onclick = "clickamount5()" id="moreclicks5">Buy with 2400 clicks</button>
+        <p>CA3: Increases your click amount by 10</p>
+        <button onclick = "clickamount10()" id="moreclicks10">Buy with 4,500 clicks</button>
+        <p>CA4: Increases your click amount by 50</p>
+        <button onclick = "clickamount50()" id="moreclicks50">Buy with 21,000 clicks</button>
+        <p>CA5: Increases your click amount by 100</p>
+        <button onclick = "clickamount100()">Buy with 40,000 clicks</button>
+        <p>CA6: Increases your click amount by 1000</p>
+        <button onclick = "clickamount1000()">Buy with 300,000 clicks</button>
+        <p>CA7: Increases your click amount by 10,000</p>
+        <button onclick = "clickamount10000()">Buy with 2,500,000 clicks</button>
+        <p>CA8: Increases your click amount by 100,000</p>
+        <button onclick = "clickamount100000()">Buy with 25,000,000 clicks</button>
+        <h3>Autoclick</h3>
+        <p>AC1: Auto clicker that clicks for you! (1 click per second)</p>
+        <button onclick = "slowautoclicker()">Buy with 1,000,000 clicks</button>
+        <p>AC2: Auto clicker that clicks for you (10 clicks per second)</p>
+        <button onclick = "autoclicker()">Buy with 50,000,000 clicks</button>
+        <p>AC3: Auto clicker that clicks for you (100 clicks per second)</p>
+        <button onclick = "fastautoclicker()">Buy with 1,000,000,000 clicks</button>
+        <p>AC4: Auto clicker that clicks for you (1000 clicks per second)</p>
+        <button onclick = "godautoclicker()">Buy with 1,000,000,000,000,000 clicks</button>
+
+
+        <script>
+            var cpc = 1;
+            
+            
+            function clickplusone (){
+                var noclicks = document.getElementById("noclicks");
+                noclicks.innerHTML = parseInt(parseFloat(noclicks.innerHTML)+cpc)
+            }
+            function clickamount1(){
+                var noclicks = document.getElementById("noclicks");
+                if (noclicks.innerHTML >= 500){
+                    noclicks.innerHTML = noclicks.innerHTML - 500
+                    cpc = cpc+1;
+                    
+                }
+            }
+            function clickamount5(){
+                var noclicks = document.getElementById("noclicks");
+                if (noclicks.innerHTML >= 2400){
+                    noclicks.innerHTML = noclicks.innerHTML - 2400
+                    cpc = cpc+5;
+                }
+            }
+            function clickamount10(){
+                var noclicks = document.getElementById("noclicks");
+                if (noclicks.innerHTML >= 4500){
+                    noclicks.innerHTML = noclicks.innerHTML - 4500
+                    cpc = cpc+10;
+                }
+            }
+            function clickamount50(){
+                var noclicks = document.getElementById("noclicks");
+                if (noclicks.innerHTML >= 21000){
+                    noclicks.innerHTML = noclicks.innerHTML - 21000
+                    cpc = cpc+50;
+                }
+            }
+            function clickamount100(){
+                var noclicks = document.getElementById("noclicks");
+                if (noclicks.innerHTML >= 40000){
+                    noclicks.innerHTML = noclicks.innerHTML - 40000
+                    cpc = cpc+100;
+                }    
+            }
+            function clickamount1000(){
+                var noclicks = document.getElementById("noclicks");
+                if (noclicks.innerHTML >= 300000){
+                    noclicks.innerHTML = noclicks.innerHTML - 300000
+                    cpc = cpc+1000;
+                } 
+            }
+            function clickamount10000(){
+                var noclicks = document.getElementById("noclicks");
+                if (noclicks.innerHTML >= 2500000){
+                    noclicks.innerHTML = noclicks.innerHTML - 2500000
+                    cpc = cpc+10000;
+                }
+            }
+            function clickamount100000(){
+                var noclicks = document.getElementById("noclicks");
+                if (noclicks.innerHTML >= 25000000){
+                    noclicks.innerHTML = noclicks.innerHTML - 25000000
+                    cpc = cpc+100000;
+                }
+            }
+            function slowautoclicker(){
+                var noclicks = document.getElementById("noclicks");
+                if (noclicks.innerHTML >= 1000000){
+                    noclicks.innerHTML = noclicks.innerHTML - 1000000
+                    function autoclicker(){
+                        
+                        noclicks.innerHTML = parseInt(parseFloat(noclicks.innerHTML) + cpc)
+                    }
+                    var click = window.setInterval(autoclicker, 1000);
+                }
+            }
+            function autoclicker(){
+                var noclicks = document.getElementById("noclicks");
+                if (noclicks.innerHTML >= 50000000){
+                    noclicks.innerHTML = noclicks.innerHTML - 50000000
+                    function autoclicker(){
+                        
+                        noclicks.innerHTML = parseInt(parseFloat(noclicks.innerHTML) + cpc)
+                    }
+                    var click = window.setInterval(autoclicker, 100);
+                }
+            }
+            function fastautoclicker(){
+                var noclicks = document.getElementById("noclicks");
+                if (noclicks.innerHTML >= 1000000000){
+                    noclicks.innerHTML = noclicks.innerHTML - 1000000000
+                    function autoclicker(){
+                        
+                        noclicks.innerHTML = parseInt(parseFloat(noclicks.innerHTML) + cpc)
+                    }
+                    var click = window.setInterval(autoclicker, 10);
+                }
+            }
+
+            function godautoclicker(){
+                var noclicks = document.getElementById("noclicks");
+                if (noclicks.innerHTML >= 1000000000000000){
+                    noclicks.innerHTML = noclicks.innerHTML - 1000000000000000
+                    function autoclicker(){
+                        
+                        noclicks.innerHTML = parseInt(parseFloat(noclicks.innerHTML) + cpc)
+                    }
+                    var click = window.setInterval(autoclicker, 1);
+                }
+            }
+            
+            
+            
+
+        </script>
+
+
+
+    </body>
+</html>
