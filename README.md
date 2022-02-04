@@ -1,6 +1,6 @@
 # Calculators v2.0
 Needed an update and more updates incoming soon!
-- Current Version: 2.3.1
+- Current Version: 2.4.0
 ## September 1, 2021
 - Added files into this github repository
 ## September 2, 2021
@@ -32,3 +32,4 @@ Needed an update and more updates incoming soon!
 - Calculators are now in a separate folder, and I tweaked the calculators.html page.
 ## February 4, 2022
 - Added a creative commons license
+- Added clicking simulator
