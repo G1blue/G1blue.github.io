@@ -33,3 +33,6 @@ Needed an update and more updates incoming soon!
 ## February 4, 2022
 - Added a creative commons license
 - Added clicking simulator
+## February 17, 2022
+- Added random number generator
+- Edit the main page
