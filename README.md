@@ -36,3 +36,6 @@ Needed an update and more updates incoming soon!
 ## February 17, 2022
 - Added random number generator
 - Edit the main page
+## February 20, 2022
+- Edited formatting for the projects page
+- Fixed no favicons appearing in other projects. 
