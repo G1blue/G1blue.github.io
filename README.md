@@ -1,7 +1,7 @@
 # Calculators v2.0
 Needed an update and more updates incoming soon!
 - Current Version: no version
-- Hosted at https://g1blue.github.io
+- Visit [Calculators!!](https://g1blue.github.io)
 ## September 1, 2021
 - Added files into this github repository
 ## September 2, 2021
