@@ -2,6 +2,9 @@
 Needed an update and more updates incoming soon!
 - Current Version: no version
 - Visit [Calculators!!](https://g1blue.github.io)
+# Goals
+- [ ] Add other games
+- [ ] Add other calculators
 ## September 1, 2021
 - Added files into this github repository
 ## September 2, 2021
