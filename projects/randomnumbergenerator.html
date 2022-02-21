@@ -35,17 +35,29 @@
                 font-size: 50px;
                 color: yellow;
             }
+            .header {
+                font-size: 40px;
+            }
+            #rngheader {
+                text-align: center;
+            }
             
         </style>
     </head>
     <body>
-        <a href="https://g1blue.github.io"><div><img id="logo" src="https://cdn.discordapp.com/attachments/811499546600669185/944881372240162836/Projects_by_G1blue_Logo.png" alt="logo" height="85"></div></a>
-       <h1 >Minimum Number</h1>
+       <a href="https://g1blue.github.io"><div><img id="logo" src="https://cdn.discordapp.com/attachments/811499546600669185/944881372240162836/Projects_by_G1blue_Logo.png" alt="logo" height="85"></div></a>
+       <h1 class="header" id="rngheader">Random Number Generator</h1>
+       <h1>Minimum Number</h1>
        <input type="number" id="min">
        <h1>Maximum Number</h1>
        <input type="number" id="max">
-       <h1>Goal Number (Optional)</h1>
+       <h1>Goal Number</h1>
        <input type="number" id="goal">
+       <h1 class="header">Goal Range:</h1>
+       <h1>Goal Range Minimum</h1>
+       <input type="number" id="goalmin">
+       <h1>Goal Range Maximum</h1>
+       <input type="number" id="goalmax">
        <br>
        <br>
        <br>
@@ -61,13 +73,19 @@
            function mainrng(){
                 var min = document.getElementById("min").value;
                 var max = document.getElementById("max").value;
-                var goal = document.getElementById("goal").value;                
+                var goal = document.getElementById("goal").value;
+                var goalmin = document.getElementById("goalmin").value;
+                var goalmax = document.getElementById("goalmax").value;                
                 var rngResult = document.getElementById("rngresult");
                 var rng = Math.floor(Math.random() * parseInt(max - min + 1));
                 rngResult.innerHTML = +min + +rng;
                 
                 if (rngResult.innerHTML === goal){
                     alert("You have reached your goal of " + goal + " after " + noclicks + " spins!")
+                    noclicks = 0;
+                }
+                else if (rngResult.innerHTML >= goalmin && rngResult.innerHTML <= goalmax){
+                    alert("You have reached your goal range of " + goalmin + " to " + goalmax + " after " + noclicks + " spins!")
                     noclicks = 0;
                 }
             }    
